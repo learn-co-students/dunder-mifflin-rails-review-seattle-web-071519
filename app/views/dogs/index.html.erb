@@ -1,0 +1,9 @@
+<%=button_to "Sort Dogs", action: 'sorted_index'%>
+
+
+
+    <% @dogs.each do |dog| %>
+        <%= link_to dog.name, dog_path(dog) %>
+    <% end %>
+
+
