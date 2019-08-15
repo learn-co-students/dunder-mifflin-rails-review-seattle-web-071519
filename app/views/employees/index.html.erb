@@ -1,0 +1,5 @@
+<% @employees.each do |emp| %>
+    
+    <%=link_to emp.first_name, employee_path(emp)%><br>
+    <img src= <%= emp.img_url %> /><br>
+<%end%>
