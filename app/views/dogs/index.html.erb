@@ -1,0 +1,8 @@
+<%=button_to "Sort Dogs", action: 'sorted_index'%>
+
+<ul>
+    <%@dogs.each do |dog|%>
+        <li><%=link_to dog.name, dog_path(dog)%></li>
+        <li><%=dog.employees.count%></li><br>
+    <%end%>
+</ul>
