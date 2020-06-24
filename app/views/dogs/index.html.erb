@@ -1,0 +1,5 @@
+<%@dogs.each do |dog| %>
+    <h1><%=link_to dog.name, dog_path(dog)%></h1>
+<%end%>
+
+<%= button_to "Sort", sort_dog_path, :method => :get%>

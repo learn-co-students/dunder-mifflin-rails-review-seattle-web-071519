@@ -1,0 +1,9 @@
+
+<%dog_list= Dog.all.sort_by do |dogs| %>
+
+   <% dogs.employees.count %>
+<%end.reverse%>
+
+<%dog_list.each do |dog| %>
+    <h1><%=link_to dog.name, dog_path(dog)%></h1>
+<%end%>
